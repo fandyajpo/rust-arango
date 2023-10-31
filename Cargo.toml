@@ -7,8 +7,10 @@ edition = "2021"
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
-axum = "0.6.20"
+axum = { version = "0.6.20" , features = ["headers"]}
 serde_json = "1.0.106"
 serde = { version = "1.0.188", features = ["derive"]}
 arangors = "0.5.4"
+tower-http = { version = "0.4.4", features = ["cors"]}
+bcrypt = "0.15.0"
 
